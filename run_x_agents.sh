@@ -1,9 +1,10 @@
 #!/bin/bash
-for i in {1..10}
+bldvm_ip='172.31.139.888'
+for i in {3..3}
 do
    agname='pep'
    echo "Creating $i th container"
    agname=$agname$i
    echo $agname
-   docker run -d -it -e agent_name=$agname  --name pep${i} demo
+   docker run -d -it -e bldvm_ip=$bldvm_ip -e agent_name=$agname  --name pep${i} demo
 done
