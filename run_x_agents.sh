@@ -1,6 +1,6 @@
 #!/bin/bash
-bldvm_ip='172.31.139.888'
-for i in {3..3}
+bldvm_ip='172.31.139.176'
+for i in {1..3}
 do
    agname='pep'
    echo "Creating $i th container"
